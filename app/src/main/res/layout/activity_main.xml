@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:theme="@style/Theme.Calculator">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#d4d4d4"
+        android:inputType="text"
+        android:maxHeight="70dp"
+        android:padding="5dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        android:textSize="50sp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ellipsize="none"
+                android:onClick="one"
+                android:text="1"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ellipsize="none"
+                android:onClick="two"
+                android:text="2"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ellipsize="none"
+                android:onClick="three"
+                android:text="3"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:backgroundTint="#ed6c15"
+                android:ellipsize="none"
+                android:onClick="add"
+                android:text="+"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ellipsize="none"
+                android:onClick="four"
+                android:text="4"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ellipsize="none"
+                android:onClick="five"
+                android:text="5"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ellipsize="none"
+                android:onClick="six"
+                android:text="6"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:backgroundTint="#ed6c15"
+                android:ellipsize="none"
+                android:onClick="subtract"
+                android:text="-"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ellipsize="none"
+                android:onClick="seven"
+                android:text="7"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ellipsize="none"
+                android:onClick="eight"
+                android:text="8"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ellipsize="none"
+                android:onClick="nine"
+                android:text="9"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:backgroundTint="#ed6c15"
+                android:ellipsize="none"
+                android:onClick="multiply"
+                android:text="*"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ellipsize="none"
+                android:onClick="zero"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ellipsize="none"
+                android:onClick="equals"
+                android:text="="
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ellipsize="none"
+                android:onClick="decimal"
+                android:text="."
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:backgroundTint="#ed6c15"
+                android:ellipsize="none"
+                android:onClick="divide"
+                android:text="/"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ellipsize="none"
+                android:onClick="sine"
+                android:text="sin("
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ellipsize="none"
+                android:onClick="cosine"
+                android:text="cos("
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ellipsize="none"
+                android:onClick="tangent"
+                android:text="tan("
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:backgroundTint="#cc0e0e"
+                android:ellipsize="none"
+                android:onClick="clear"
+                android:text="@string/clear_button"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ellipsize="none"
+                android:onClick="pi"
+                android:text="π"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:onClick="sqrt"
+                android:text="√"
+                android:textSize="20sp"
+                android:ellipsize="none" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ellipsize="none"
+                android:onClick="percent"
+                android:text="%"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:backgroundTint="#cc0e0e"
+                android:ellipsize="none"
+                android:onClick="backspace"
+                android:text="@string/delete_button"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonDefault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="System Default" />
+
+        <RadioButton
+            android:id="@+id/radioButtonLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Light Theme" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dark Theme" />
+
+    </RadioGroup>
+
+</LinearLayout>
